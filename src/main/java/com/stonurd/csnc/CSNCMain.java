@@ -2,6 +2,7 @@ package com.stonurd.csnc;
 
 import com.mojang.logging.LogUtils;
 import com.stonurd.csnc.server.block.CSNCBlockRegistry;
+import com.stonurd.csnc.server.block.fluid.CSNCFluidInteraction;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidRegistry;
 import com.stonurd.csnc.server.item.CSNCItemRegistry;
 
@@ -19,11 +20,13 @@ import org.slf4j.Logger;
 
 @Mod(CSNCMain.MODID)
 public class CSNCMain {
-    
+
     public static final String MODID = "csnc";
+    @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CSNCMain() {
+        @SuppressWarnings("removal")
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
@@ -36,9 +39,9 @@ public class CSNCMain {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        CSNCFluidRegistry.postInit();
+        CSNCFluidInteraction.postInit();
     }
-   
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
@@ -47,9 +50,9 @@ public class CSNCMain {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-        } 
+        }
     }
 }
 
-        //@SuppressWarnings("")
-        ////CSNCCreativeTab.java
+// @SuppressWarnings("")
+//// CSNCCreativeTab.java

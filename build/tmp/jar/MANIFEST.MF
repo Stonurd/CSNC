@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Specification-Title: csnc
 Specification-Vendor: Stonurd
 Specification-Version: 1
-Implementation-Title: CreateSweetsNuclearCore
+Implementation-Title: CSNC
 Implementation-Version: 0.2-1.20.1
 Implementation-Vendor: Stonurd
-Implementation-Timestamp: 2025-05-12T15:26:17+0200
+Implementation-Timestamp: 2025-05-14T15:54:47+0200
 
