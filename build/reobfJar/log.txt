@@ -180,11 +180,17 @@ Writing Output: C:\Users\boyer\Documents\GitHub\CSNC\build\reobfJar\output.jar
   assets/csnc/textures/block/
   assets/csnc/textures/block/honey_flow.png
   assets/csnc/textures/block/honey_flow.png.mcmeta
+  assets/csnc/textures/block/honey_flow0.png
   assets/csnc/textures/block/honey_still.png
+  assets/csnc/textures/block/honey_still.png.mcmeta
+  assets/csnc/textures/block/honey_still0.png
   assets/csnc/textures/item/
   assets/csnc/textures/item/honey_bucket.png
   assets/csnc/textures/misc/
   assets/csnc/textures/misc/under_acid.png
+  assets/minecraft/
+  assets/minecraft/atlases/
+  assets/minecraft/atlases/block.json
   com/
   com/stonurd/
   com/stonurd/csnc/

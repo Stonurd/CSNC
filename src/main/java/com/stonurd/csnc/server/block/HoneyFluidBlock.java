@@ -10,5 +10,5 @@ public class HoneyFluidBlock extends LiquidBlock {
 
 public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour.Properties properties) {
         super(flowingFluid, properties);
-    }    
+    }
 }

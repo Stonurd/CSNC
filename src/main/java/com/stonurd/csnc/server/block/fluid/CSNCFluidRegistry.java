@@ -23,13 +23,12 @@ public static final DeferredRegister<FluidType> FLUID_TYPE_REG = DeferredRegiste
 public static final DeferredRegister<Fluid> FLUID_REG = DeferredRegister.create(ForgeRegistries.FLUIDS, CSNCMain.MODID);
 //Honey
 private static ForgeFlowingFluid.Properties honeyProperties() {
-        return new ForgeFlowingFluid.Properties(HONEY_FLUID_TYPE1, HONEY_FLUID_SOURCE1, HONEY_FLUID_FLOWING1).tickRate(30).slopeFindDistance(2).levelDecreasePerBlock(2)
+        return new ForgeFlowingFluid.Properties(HONEY_FLUID_TYPE1, HONEY_FLUID_SOURCE1, HONEY_FLUID_FLOWING1).tickRate(40).slopeFindDistance(2).levelDecreasePerBlock(2)
                 .bucket(CSNCItemRegistry.HONEY_BUCKET1).block(CSNCBlockRegistry.HONEY1); }
 public static final RegistryObject<FluidType> HONEY_FLUID_TYPE1 = FLUID_TYPE_REG.register("honey", ()
-        -> new HoneyType(FluidType.Properties.create().lightLevel(15).density(1024).viscosity(2048).temperature(300).pathType(BlockPathTypes.LAVA)
+        -> new HoneyType(FluidType.Properties.create().lightLevel(5).density(2048).viscosity(4906).temperature(1000).pathType(BlockPathTypes.LAVA)
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)));
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_SOURCE1 = FLUID_REG.register("honey", () -> new ForgeFlowingFluid.Source(honeyProperties()));
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_FLOWING1 = FLUID_REG.register("honey_flowing", () -> new ForgeFlowingFluid.Flowing(honeyProperties()));
 //anotherFluid
-
 }

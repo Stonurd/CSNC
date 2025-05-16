@@ -51,7 +51,7 @@ public class CSNCFluidInteraction {
         ));
         FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(),
-                fluidState -> Blocks.HONEYCOMB_BLOCK.defaultBlockState()
+                fluidState -> ACBlockRegistry.YELLOW_ROCK_CANDY.get().defaultBlockState()
         ));
         }
 }

@@ -1,0 +1,12 @@
+    {
+        "sources": [
+        {
+            "type": "single",
+            "resource": "csnc:block/honey_flow"
+        },
+        {
+            "type": "single",
+            "resource": "csnc:block/honey_still"
+        }
+    ]
+}

@@ -19,6 +19,6 @@ public class CSNCBlockRegistry {
 public static final DeferredRegister<Block> BLOCK_REG = DeferredRegister.create(ForgeRegistries.BLOCKS, CSNCMain.MODID);
 
 public static final RegistryObject<LiquidBlock> HONEY1 = BLOCK_REG.register("honey", ()
-    -> new HoneyFluidBlock(CSNCFluidRegistry.HONEY_FLUID_SOURCE1, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW)
+    -> new LiquidBlock(CSNCFluidRegistry.HONEY_FLUID_SOURCE1, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW)
         .noCollission().strength(100.0F).lightLevel(state -> 15).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
 }

@@ -2,5 +2,6 @@
   "item.csnc.honey_bucket":"honey bucket",
   "block.csnc.honey":"honey",
   "fluid.csnc.honey":"honey",
+  "fluid.csnc.honey_flowing":"honey",
   "fluid_type.csnc.honey":"honey"
 }
