@@ -32,3 +32,4 @@ public static final RegistryObject<FlowingFluid> HONEY_FLUID_SOURCE1 = FLUID_REG
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_FLOWING1 = FLUID_REG.register("honey_flowing", () -> new ForgeFlowingFluid.Flowing(honeyProperties()));
 //anotherFluid
 }
+//.block(createEffect(MapColor.COLOR_ORANGE, 0, () -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5*20))).commonTag().flowing();

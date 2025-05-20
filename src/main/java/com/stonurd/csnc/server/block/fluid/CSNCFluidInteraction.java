@@ -49,9 +49,9 @@ public class CSNCFluidInteraction {
                 (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(Blocks.NETHERITE_BLOCK) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                 Blocks.HONEY_BLOCK.defaultBlockState()
         ));
-        FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
-                CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(),
-                fluidState -> ACBlockRegistry.YELLOW_ROCK_CANDY.get().defaultBlockState()
-        ));
+        FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
+                ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
+                fluidState -> fluidState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : ACBlockRegistry.YELLOW_ROCK_CANDY.get().defaultBlockState()
+                ));
         }
 }
