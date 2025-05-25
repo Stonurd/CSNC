@@ -21,14 +21,13 @@ public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour
         super(flowingFluid, properties);
         this.effect= (MobEffects.SATURATION);
     }
+/*
 @Override
   public void entityInside(BlockState blockState, Level level, BlockPos pos, Entity entity) {
      if (entity instanceof LivingEntity living) {
       //effect = this.effect.get();
-      living.hasEffect(effect);
+      //living.hasEffect(effect); NO
      }
-    
-    
     /* 
     if (entity.getFluidTypeHeight(getFluid().getFluidType()) > 0 && entity instanceof LivingEntity living) {
       MobEffect effect = MobEffects.SATURATION;
@@ -36,8 +35,6 @@ public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour
 */
 
 }
-}
-
 //.block(createEffect(MapColor.GRASS, 0,
 // () -> new MobEffectInstance(TinkerEffects.bouncy.get(), 5*20))).commonTag("slime").flowing(SlimeFluid.Source::new, SlimeFluid.Flowing::new);
 //MobEffects.POISON, 5*20

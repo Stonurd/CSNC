@@ -21,8 +21,9 @@ public class CSNCFluidRegistry {
 //registerZone
 public static final DeferredRegister<FluidType> FLUID_TYPE_REG = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CSNCMain.MODID);
 public static final DeferredRegister<Fluid> FLUID_REG = DeferredRegister.create(ForgeRegistries.FLUIDS, CSNCMain.MODID);
+
 //Honey
-private static ForgeFlowingFluid.Properties honeyProperties() {
+public static ForgeFlowingFluid.Properties honeyProperties() {
         return new ForgeFlowingFluid.Properties(HONEY_FLUID_TYPE1, HONEY_FLUID_SOURCE1, HONEY_FLUID_FLOWING1).tickRate(40).slopeFindDistance(2).levelDecreasePerBlock(2)
                 .bucket(CSNCItemRegistry.HONEY_BUCKET1).block(CSNCBlockRegistry.HONEY1); }
 public static final RegistryObject<FluidType> HONEY_FLUID_TYPE1 = FLUID_TYPE_REG.register("honey", ()
@@ -30,6 +31,8 @@ public static final RegistryObject<FluidType> HONEY_FLUID_TYPE1 = FLUID_TYPE_REG
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)));
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_SOURCE1 = FLUID_REG.register("honey", () -> new ForgeFlowingFluid.Source(honeyProperties()));
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_FLOWING1 = FLUID_REG.register("honey_flowing", () -> new ForgeFlowingFluid.Flowing(honeyProperties()));
+
 //anotherFluid
+//Honey
 }
 //.block(createEffect(MapColor.COLOR_ORANGE, 0, () -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5*20))).commonTag().flowing();

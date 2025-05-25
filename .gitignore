@@ -398,5 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 # gradle
-build
+.build
 .gradle

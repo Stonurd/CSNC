@@ -6,10 +6,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 
+import java.util.function.Consumer;
+
 public class HoneyType extends FluidType {
 
   @SuppressWarnings("removal")
-  public static final ResourceLocation FLUID_STILL = new ResourceLocation("csnc:block/honey_still.png");
+  public static final ResourceLocation FLUID_STILL = new ResourceLocation("minecraft:block/water_still.png");
   @SuppressWarnings("removal")
   public static final ResourceLocation FLUID_FLOWING = new ResourceLocation("csnc:block/honey_flow.png");
   @SuppressWarnings("removal")
@@ -20,7 +22,7 @@ public class HoneyType extends FluidType {
   }
 
   @Override
-  public void initializeClient(java.util.function.Consumer<IClientFluidTypeExtensions> consumer) {
+  public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
     consumer.accept(new IClientFluidTypeExtensions() {
 
       @Override
@@ -40,3 +42,7 @@ public class HoneyType extends FluidType {
     });
   }
 }
+//minecraft:block/water_still.png
+//assets/minecraft/textures/block/water_still.png
+//assets/minecraft/textures/block/water_flow.png
+//csnc:block/honey_still.png
