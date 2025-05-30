@@ -178,28 +178,28 @@ Writing Output: C:\Users\boyer\Documents\GitHub\CSNC\build\reobfJar\output.jar
   assets/csnc/models/item/honey_bucket.json
   assets/csnc/textures/
   assets/csnc/textures/block/
-  assets/csnc/textures/block/honey_flow.png
-  assets/csnc/textures/block/honey_flow.png.mcmeta
   assets/csnc/textures/block/honey_flow0.png
+  assets/csnc/textures/block/honey_flowing.png
+  assets/csnc/textures/block/honey_flowing.png.mcmeta
   assets/csnc/textures/block/honey_still.png
-  assets/csnc/textures/block/honey_still.png.mcmeta
-  assets/csnc/textures/block/honey_still0.png
+  assets/csnc/textures/block/honey_still00.png
+  assets/csnc/textures/block/honey_still00.png.mcmeta
   assets/csnc/textures/item/
   assets/csnc/textures/item/honey_bucket.png
   assets/csnc/textures/misc/
   assets/csnc/textures/misc/under_acid.png
-  assets/minecraft/
-  assets/minecraft/atlases/
-  assets/minecraft/atlases/block.json
+  assets/csnc/textures/misc/under_honey.png
   com/
   com/stonurd/
   com/stonurd/csnc/
   com/stonurd/csnc/CSNCMain$ClientModEvents.class
   com/stonurd/csnc/CSNCMain.class
+  com/stonurd/csnc/client/
+  com/stonurd/csnc/client/event/
+  com/stonurd/csnc/client/event/EventFog.class
   com/stonurd/csnc/server/
   com/stonurd/csnc/server/block/
   com/stonurd/csnc/server/block/CSNCBlockRegistry.class
-  com/stonurd/csnc/server/block/HoneyFluidBlock.class
   com/stonurd/csnc/server/block/fluid/
   com/stonurd/csnc/server/block/fluid/CSNCFluidInteraction.class
   com/stonurd/csnc/server/block/fluid/CSNCFluidRegistry.class

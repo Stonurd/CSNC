@@ -31,7 +31,6 @@ public class CSNCMain {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
         CSNCFluidRegistry.FLUID_TYPE_REG.register(modEventBus);
         CSNCFluidRegistry.FLUID_REG.register(modEventBus);

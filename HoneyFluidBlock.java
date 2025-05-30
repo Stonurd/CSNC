@@ -17,10 +17,23 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class HoneyFluidBlock extends LiquidBlock {
 
 private MobEffect effect;
-public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour.Properties properties, boolean effect) {
+
+public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour.Properties properties, MobEffect effect) {
         super(flowingFluid, properties);
-        this.effect= (MobEffects.SATURATION);
+        this.effect = effect;
     }
+
+public void entityInside(BlockState blockState, Level level, BlockPos pos, Entity entity) {
+     if (entity instanceof LivingEntity living) {
+     this.effect = (MobEffects.SATURATION);
+//new MobEffects();
+}
+}
+}
+
+//        this.effect= (MobEffects.SATURATION);
+
+
 /*
 @Override
   public void entityInside(BlockState blockState, Level level, BlockPos pos, Entity entity) {
@@ -34,7 +47,7 @@ public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour
     }
 */
 
-}
+
 //.block(createEffect(MapColor.GRASS, 0,
 // () -> new MobEffectInstance(TinkerEffects.bouncy.get(), 5*20))).commonTag("slime").flowing(SlimeFluid.Source::new, SlimeFluid.Flowing::new);
 //MobEffects.POISON, 5*20
@@ -68,7 +81,7 @@ public HoneyFluidBlock(RegistryObject<FlowingFluid> flowingFluid, BlockBehaviour
 /*
     public HoneyFluidBlock(Supplier<? extends FlowingFluid> p_54694_, Properties p_54695_) {
         super(p_54694_, p_54695_);
-        //TODO Auto-generated constructor stub
+      todo generated
     }
 */
 /* 
