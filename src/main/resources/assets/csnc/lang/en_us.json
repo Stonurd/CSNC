@@ -3,5 +3,14 @@
   "block.csnc.honey":"honey",
   "fluid.csnc.honey":"honey",
   "fluid.csnc.honey_flowing":"honey",
-  "fluid_type.csnc.honey":"honey"
+  "fluid_type.csnc.honey":"honey",
+
+  "item.csnc.caramel_bucket":"Caramel Bucket",
+  "block.csnc.caramel":"caramel",
+  "fluid.csnc.caramel":"caramel",
+  "fluid.csnc.caramel_flowing":"caramel",
+  "fluid_type.csnc.caramel":"caramel"
+
+
+
 }

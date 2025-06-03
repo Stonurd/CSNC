@@ -36,7 +36,6 @@ public class CSNCMain {
         CSNCFluidRegistry.FLUID_REG.register(modEventBus);
         CSNCItemRegistry.ITEM_REG.register(modEventBus);
         CSNCBlockRegistry.BLOCK_REG.register(modEventBus);
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

@@ -15,5 +15,8 @@ public static final DeferredRegister<Item> ITEM_REG = DeferredRegister.create(Fo
 
 public static final RegistryObject<Item> HONEY_BUCKET1 = ITEM_REG.register("honey_bucket", () -> new BucketItem(CSNCFluidRegistry.HONEY_FLUID_SOURCE1,
     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-
+public static final RegistryObject<Item> CARAMEL_BUCKET1 = ITEM_REG.register("caramel_bucket", () -> new BucketItem(CSNCFluidRegistry.CARAMEL_FLUID_SOURCE1,
+    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+public static final RegistryObject<Item> INK_BUCKET1 = ITEM_REG.register("ink_bucket", () -> new BucketItem(CSNCFluidRegistry.INK_FLUID_SOURCE1,
+    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));    
 }

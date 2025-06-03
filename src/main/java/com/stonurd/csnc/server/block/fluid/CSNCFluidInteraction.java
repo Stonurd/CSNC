@@ -2,12 +2,14 @@ package com.stonurd.csnc.server.block.fluid;
 
 import com.github.alexmodguy.alexscaves.server.block.ACBlockRegistry;
 import com.github.alexmodguy.alexscaves.server.block.fluid.ACFluidRegistry;
+import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 
 import net.minecraft.world.level.block.Blocks;
 
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.fluids.FluidInteractionRegistry;
 import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation;
+import slimeknights.tconstruct.fluids.TinkerFluids;
 
 public class CSNCFluidInteraction {
     public static void postInit() {
@@ -53,5 +55,15 @@ public class CSNCFluidInteraction {
                 ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
                 fluidState -> fluidState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : ACBlockRegistry.YELLOW_ROCK_CANDY.get().defaultBlockState()
                 ));
-        }
+        FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
+                ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
+                fluidState -> fluidState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : ACBlockRegistry.YELLOW_ROCK_CANDY.get().defaultBlockState()
+                ));
+
+
+
 }
+}
+//SlimeType
+//TinkerFluids.
+//earth_slime
