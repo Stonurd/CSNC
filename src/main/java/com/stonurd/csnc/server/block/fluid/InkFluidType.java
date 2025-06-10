@@ -41,7 +41,7 @@ public class InkFluidType extends FluidType {
       @Override
         public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
           float nearDistance, float farDistance, FogShape shape) {
-            RenderSystem.setShaderFogColor(1f/255f,1f/255f,1f/255f);//(1f/255f,1f/255f,1f/255f)
+            RenderSystem.setShaderFogColor(1f/255f,1f/255f,1f/255f);//1,1,1 ok
             RenderSystem.setShaderFogStart(-1024);
             RenderSystem.setShaderFogEnd(96.0f);
       }

@@ -9,8 +9,53 @@
   "block.csnc.caramel":"caramel",
   "fluid.csnc.caramel":"caramel",
   "fluid.csnc.caramel_flowing":"caramel",
-  "fluid_type.csnc.caramel":"caramel"
+  "fluid_type.csnc.caramel":"caramel",
 
+  "item.csnc.ink_bucket":"Ink Bucket",
+  "block.csnc.ink":"ink",
+  "fluid.csnc.ink":"ink",
+  "fluid.csnc.ink_flowing":"ink",
+  "fluid_type.csnc.ink":"ink",
 
+  "item.csnc.curdled_milk_bucket":"curdled milk Bucket",
+  "block.csnc.curdled_milk":"curdled milk",
+  "fluid.csnc.curdled_milk":"curdled milk",
+  "fluid.csnc.curdled_milk_flowing":"curdled milk",
+  "fluid_type.csnc.curdled_milk":"curdled Milk",
 
+  "item.csnc.frying_oil_bucket":"Frying Oil Bucket",
+  "block.csnc.frying_oil":"frying oil",
+  "fluid.csnc.frying_oil":"frying oil",
+  "fluid.csnc.frying_oil_flowing":"frying oil",
+  "fluid_type.csnc.frying_oil":"frying oil",
+
+  "item.csnc.ketchup_bucket":"Ketchup Bucket",
+  "block.csnc.ketchup":"ketchup",
+  "fluid.csnc.ketchup":"ketchup",
+  "fluid.csnc.ketchup_flowing":"ketchup",
+  "fluid_type.csnc.ketchup":"ketchup",
+
+  "item.csnc.mayonnaise_bucket":"Mayonnaise Bucket",
+  "block.csnc.mayonnaise":"mayonnaise",
+  "fluid.csnc.mayonnaise":"mayonnaise",
+  "fluid.csnc.mayonnaise_flowing":"mayonnaise",
+  "fluid_type.csnc.mayonnaise":"mayonnaise",
+
+  "item.csnc.ruby_chocolate_bucket":"Ruby Chocolate Bucket",
+  "block.csnc.ruby_chocolate":"ruby chocolate",
+  "fluid.csnc.ruby_chocolate":"ruby chocolate",
+  "fluid.csnc.ruby_chocolate_flowing":"ruby chocolate",
+  "fluid_type.csnc.ruby_chocolate":"ruby chocolate",
+
+  "item.csnc.slime_bucket":"Slime Bucket",
+  "block.csnc.slime":"slime",
+  "fluid.csnc.slime":"slime",
+  "fluid.csnc.slime_flowing":"slime",
+  "fluid_type.csnc.slime":"slime",
+
+  "item.csnc.black_chocolate_bucket":"Black Chocolate Bucket",
+  "block.csnc.black_chocolate":"black chocolate",
+  "fluid.csnc.black_chocolate":"black chocolate",
+  "fluid.csnc.black_chocolate_flowing":"black chocolate",
+  "fluid_type.csnc.black_chocolate":"black chocolate"
 }

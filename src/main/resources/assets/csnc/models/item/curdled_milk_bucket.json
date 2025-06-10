@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "csnc/curdled_milk_bucket"
+    "layer0": "csnc:item/curdled_milk_bucket"
   }
 }

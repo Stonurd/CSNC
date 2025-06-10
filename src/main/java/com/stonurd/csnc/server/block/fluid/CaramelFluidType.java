@@ -19,7 +19,7 @@ public class CaramelFluidType extends FluidType {
   public static final ResourceLocation FLUID_STILL = new ResourceLocation("csnc:block/caramel_still");
   @SuppressWarnings("removal")
   public static final ResourceLocation FLUID_FLOWING = new ResourceLocation("csnc:block/caramel_flow");
-  
+
   public CaramelFluidType(Properties properties) {
     super(properties);
   }
@@ -41,8 +41,8 @@ public class CaramelFluidType extends FluidType {
       @Override
         public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
           float nearDistance, float farDistance, FogShape shape) {
-            RenderSystem.setShaderFogColor(128f/255f,72f/255f,24f/255f);//140,96,40
-            RenderSystem.setShaderFogStart(-512);
+            RenderSystem.setShaderFogColor(108f/255f,68f/255f,22f/255f);//108,68,22 ok
+            RenderSystem.setShaderFogStart(-1024);
             RenderSystem.setShaderFogEnd(96.0f);
       }
     });

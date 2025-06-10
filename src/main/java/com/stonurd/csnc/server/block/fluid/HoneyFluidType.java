@@ -49,7 +49,7 @@ public class HoneyFluidType extends FluidType {
       @Override
         public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
           float nearDistance, float farDistance, FogShape shape) {
-            RenderSystem.setShaderFogColor(232f/255f,232f/255f,0f/255f);
+            RenderSystem.setShaderFogColor(255f/255f,216f/255f,100f/255f);//255,216,100 ok
             RenderSystem.setShaderFogStart(-128);//-128
             RenderSystem.setShaderFogEnd(256f);//96.0f
       }

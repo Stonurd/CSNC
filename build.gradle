@@ -139,12 +139,13 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
     implementation fg.deobf("curse.maven:alexs-caves-924854:5848216")
-    implementation fg.deobf("curse.maven:create-328085:6323270")
+    implementation fg.deobf("curse.maven:create-328085:6624074")
     implementation fg.deobf("curse.maven:create-confectionery-531834:4835793")
     implementation fg.deobf("curse.maven:create-misc-and-things-652202:4735326")
     implementation fg.deobf("curse.maven:create-bitterballen-918751:6286509")
     implementation fg.deobf("curse.maven:create-enchantment-industry-688768:6405940")
-    implementation fg.deobf("curse.maven:tinkers-construct-74072:6603344")
+    implementation fg.deobf("curse.maven:tinkers-construct-74072:6635554")
+    implementation fg.deobf("curse.maven:mantle-74924:6635380")
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"

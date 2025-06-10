@@ -27,7 +27,7 @@ license = "All Rights Reserved"
 [[dependencies.${mod_id}]]
     modId = "create"
     mandatory = true
-    versionRange = "[6.0.4]"
+    versionRange = "[6.0.5]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]
@@ -57,7 +57,7 @@ license = "All Rights Reserved"
 [[dependencies.${mod_id}]]
     modId = "tconstruct"
     mandatory = true
-    versionRange = "[3.10.0.67]"
+    versionRange = "[3.10.1.76]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]

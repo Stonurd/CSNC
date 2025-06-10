@@ -23,7 +23,6 @@ import org.slf4j.Logger;
 public class CSNCMain {
 
     public static final String MODID = "csnc";
-    @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CSNCMain() {
@@ -53,6 +52,3 @@ public class CSNCMain {
         }
     }
 }
-
-// @SuppressWarnings("")
-//// CSNCCreativeTab.java
