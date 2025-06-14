@@ -3,7 +3,7 @@ Specification-Title: csnc
 Specification-Vendor: Stonurd
 Specification-Version: 1
 Implementation-Title: CSNC
-Implementation-Version: 0.2-1.20.1
+Implementation-Version: 1.0-1.20.1
 Implementation-Vendor: Stonurd
-Implementation-Timestamp: 2025-06-10T13:27:56+0200
+Implementation-Timestamp: 2025-06-14T13:07:31+0200
 
