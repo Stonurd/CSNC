@@ -1,6 +1,3 @@
-https://youtu.be/IEkLkN1uTiA
-
-
 
 Source installation information for modders
 -------------------------------------------
