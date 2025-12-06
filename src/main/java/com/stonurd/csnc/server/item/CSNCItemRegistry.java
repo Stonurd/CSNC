@@ -4,7 +4,6 @@ import com.stonurd.csnc.CSNCMain;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidRegistry;
 
 import net.minecraft.world.item.*;
-
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,16 +32,6 @@ public static final RegistryObject<Item> SLIME_BUCKET1 = ITEM_REG.register("slim
 public static final RegistryObject<Item> BLACK_CHOCOLATE_BUCKET1 = ITEM_REG.register("black_chocolate_bucket", () -> new BucketItem(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_SOURCE1,
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
 }
-
-
-
-
-
-
-
-
-
-
 
 //Honey HONEY from create
 //ink INK

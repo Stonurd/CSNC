@@ -27,7 +27,7 @@ license = "All Rights Reserved"
 [[dependencies.${mod_id}]]
     modId = "create"
     mandatory = true
-    versionRange = "[6.0.6]"
+    versionRange = "[6.0.8]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]
@@ -45,19 +45,19 @@ license = "All Rights Reserved"
 [[dependencies.${mod_id}]]
     modId = "create_bic_bit"
     mandatory = true
-    versionRange = "[1.0]"
+    versionRange = "[1.0.2B]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]
     modId = "create_enchantment_industry"
     mandatory = true
-    versionRange = "[1.3.2-for-create-6.0.4]"
+    versionRange = "[1.3.3-for-create-6.0.6]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]
     modId = "tconstruct"
     mandatory = true
-    versionRange = "[3.10.1.76]"
+    versionRange = "[3.10.2.92]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]

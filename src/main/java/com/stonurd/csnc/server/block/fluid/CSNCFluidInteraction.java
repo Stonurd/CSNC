@@ -34,7 +34,7 @@ public class CSNCFluidInteraction {
                         (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.DRAIN.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         ACBlockRegistry.ABYSSMARINE.get().defaultBlockState()));
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBER.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBERSOL.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         ACBlockRegistry.LIMESTONE.get().defaultBlockState()));
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.PRIMAL_MAGMA.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
@@ -83,13 +83,13 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.INK_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
                         fluidState -> ACBlockRegistry.BLACK_ROCK_CANDY.get().defaultBlockState()));
-        //ORANGE_ROCK_CANDY
+        //MAGENTA_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.CARAMEL_FLUID_TYPE1.get(),
-                        fluidState -> ACBlockRegistry.ORANGE_ROCK_CANDY.get().defaultBlockState()));
+                        fluidState -> ACBlockRegistry.MAGENTA_ROCK_CANDY.get().defaultBlockState()));
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.CARAMEL_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
-                        fluidState -> ACBlockRegistry.ORANGE_ROCK_CANDY.get().defaultBlockState()));
+                        fluidState -> ACBlockRegistry.MAGENTA_ROCK_CANDY.get().defaultBlockState()));
         //PINK_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.RUBY_CHOCOLATE_FLUID_TYPE1.get(),
@@ -153,7 +153,15 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 TinkerFluids.earthSlime.getType(),
                         fluidState -> ACBlockRegistry.CYAN_ROCK_CANDY.get().defaultBlockState()));
+        //BROWN_ROCK_CANDY TinkerFluids.earthSlime.getType()
+                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
+                ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
+                        fluidState -> ACBlockRegistry.BROWN_ROCK_CANDY.get().defaultBlockState()));
+                FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
+                CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(),
+                        fluidState -> ACBlockRegistry.BROWN_ROCK_CANDY.get().defaultBlockState()));
         }
+
 }
 /* 
  FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(

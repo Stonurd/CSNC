@@ -2,6 +2,7 @@ package com.stonurd.csnc;
 
 import com.mojang.logging.LogUtils;
 import com.stonurd.csnc.server.item.CSNCItemRegistry;
+import com.stonurd.csnc.server.misc.CSNCreativeTabRegistry;
 import com.stonurd.csnc.server.block.CSNCBlockRegistry;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidRegistry;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidInteraction;
@@ -35,6 +36,7 @@ public class CSNCMain {
         CSNCFluidRegistry.FLUID_REG.register(modEventBus);
         CSNCItemRegistry.ITEM_REG.register(modEventBus);
         CSNCBlockRegistry.BLOCK_REG.register(modEventBus);
+        CSNCreativeTabRegistry.DEF_REG.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
