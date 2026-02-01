@@ -1,5 +1,3 @@
-https://youtu.be/ZDAFDMLzwFE
-https://chatgpt.com/share/692ee23f-1584-800c-a25f-bba5f33c6ac4
 
 Source installation information for modders
 -------------------------------------------
