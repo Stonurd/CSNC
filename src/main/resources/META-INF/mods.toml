@@ -57,7 +57,7 @@ license = "All Rights Reserved"
 [[dependencies.${mod_id}]]
     modId = "tconstruct"
     mandatory = true
-    versionRange = "[3.10.2.92]"
+    versionRange = "[3.11.2.166]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.${mod_id}]]
