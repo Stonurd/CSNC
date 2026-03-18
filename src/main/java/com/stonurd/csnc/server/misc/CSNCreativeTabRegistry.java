@@ -30,6 +30,11 @@ public class CSNCreativeTabRegistry {
                 output.accept(CSNCItemRegistry.FRYING_OIL_BUCKET1.get());
                 output.accept(CSNCItemRegistry.SLIME_BUCKET1.get());
                 output.accept(CSNCItemRegistry.BLACK_CHOCOLATE_BUCKET1.get());
+                output.accept(CSNCItemRegistry.RED_WINE_BUCKET1.get());
+                output.accept(CSNCItemRegistry.WHITE_WINE_BUCKET1.get());
+                output.accept(CSNCItemRegistry.APPLE_JUICE_BUCKET1.get());
+                output.accept(CSNCItemRegistry.WINE_BUCKET1.get());
+                output.accept(CSNCItemRegistry.VINEGAR_BUCKET1.get());
             })
             .build());
 }

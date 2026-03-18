@@ -13,11 +13,11 @@
   "fluid.csnc.caramel_flowing":"Caramel",
   "fluid_type.csnc.caramel":"Caramel",
 
-  "item.csnc.ink_bucket":"Ink Bucket",
-  "block.csnc.ink":"Ink",
-  "fluid.csnc.ink":"Ink",
-  "fluid.csnc.ink_flowing":"Ink",
-  "fluid_type.csnc.ink":"Ink",
+  "item.csnc.ink_bucket":"Raw Ink Bucket",
+  "block.csnc.ink":"Raw Ink",
+  "fluid.csnc.ink":"Raw Ink",
+  "fluid.csnc.ink_flowing":"Raw Ink",
+  "fluid_type.csnc.ink":"Raw Ink",
 
   "item.csnc.curdled_milk_bucket":"Curdled Milk Bucket",
   "block.csnc.curdled_milk":"Curdled Milk",
@@ -25,11 +25,11 @@
   "fluid.csnc.curdled_milk_flowing":"Curdled Milk",
   "fluid_type.csnc.curdled_milk":"Curdled Milk",
 
-  "item.csnc.frying_oil_bucket":"Frying Oil Bucket",
-  "block.csnc.frying_oil":"Frying Oil",
-  "fluid.csnc.frying_oil":"Frying Oil",
-  "fluid.csnc.frying_oil_flowing":"Frying Oil",
-  "fluid_type.csnc.frying_oil":"Frying Oil",
+  "item.csnc.frying_oil_bucket":"Sunflower Oil Bucket",
+  "block.csnc.frying_oil":"Sunflower Oil",
+  "fluid.csnc.frying_oil":"Sunflower Oil",
+  "fluid.csnc.frying_oil_flowing":"Sunflower Oil",
+  "fluid_type.csnc.frying_oil":"Sunflower Oil",
 
   "item.csnc.ketchup_bucket":"Ketchup Bucket",
   "block.csnc.ketchup":"Ketchup",
@@ -59,5 +59,35 @@
   "block.csnc.black_chocolate":"Black Chocolate",
   "fluid.csnc.black_chocolate":"Black Chocolate",
   "fluid.csnc.black_chocolate_flowing":"Black Chocolate",
-  "fluid_type.csnc.black_chocolate":"Black Chocolate"
+  "fluid_type.csnc.black_chocolate":"Black Chocolate",
+
+  "item.csnc.red_wine_bucket":"Red Grape Juice Bucket",
+  "block.csnc.red_wine":"Red Grape Juice",
+  "fluid.csnc.red_wine":"Red Grape Juice",
+  "fluid.csnc.red_wine_flowing":"Red Grape Juice",
+  "fluid_type.csnc.red_wine":"Red Grape Juice",
+
+  "item.csnc.white_wine_bucket":"White Grape Juice Bucket",
+  "block.csnc.white_wine":"White Grape Juice",
+  "fluid.csnc.white_wine":"White Grape Juice",
+  "fluid.csnc.white_wine_flowing":"White Grape Juice",
+  "fluid_type.csnc.white_wine":"White Grape Juice",
+
+  "item.csnc.apple_juic_bucket":"White Grape Juice Bucket",
+  "block.csnc.apple_juice":"Apple Juice",
+  "fluid.csnc.apple_juice":"Apple Juice",
+  "fluid.csnc.apple_juice_flowing":"Apple Juice",
+  "fluid_type.csnc.apple_juice":"Apple Juice",
+
+  "item.csnc.wine_bucket":"Wine Bucket",
+  "block.csnc.wine":"Wine",
+  "fluid.csnc.wine":"Wine",
+  "fluid.csnc.wine_flowing":"Wine",
+  "fluid_type.csnc.wine":"Wine",
+
+  "item.csnc.vinegar_bucket":"Vinegar Bucket",
+  "block.csnc.vinegar":"Vinegar",
+  "fluid.csnc.vinegar":"Vinegar",
+  "fluid.csnc.vinegar_flowing":"Vinegar",
+  "fluid_type.csnc.vinegar":"Vinegar"
 }

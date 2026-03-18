@@ -31,6 +31,19 @@ public static final RegistryObject<Item> SLIME_BUCKET1 = ITEM_REG.register("slim
     new Item.Properties().rarity(Rarity.UNCOMMON).craftRemainder(Items.BUCKET).stacksTo(1)));
 public static final RegistryObject<Item> BLACK_CHOCOLATE_BUCKET1 = ITEM_REG.register("black_chocolate_bucket", () -> new BucketItem(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_SOURCE1,
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+public static final RegistryObject<Item> RED_WINE_BUCKET1 = ITEM_REG.register("red_wine_bucket", () -> new BucketItem(CSNCFluidRegistry.RED_WINE_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+public static final RegistryObject<Item> WHITE_WINE_BUCKET1 = ITEM_REG.register("white_wine_bucket", () -> new BucketItem(CSNCFluidRegistry.WHITE_WINE_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+public static final RegistryObject<Item> APPLE_JUICE_BUCKET1 = ITEM_REG.register("apple_juice_bucket", () -> new BucketItem(CSNCFluidRegistry.APPLE_FUID_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+public static final RegistryObject<Item> WINE_BUCKET1 = ITEM_REG.register("wine_bucket", () -> new BucketItem(CSNCFluidRegistry.WINE_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+public static final RegistryObject<Item> VINEGAR_BUCKET1 = ITEM_REG.register("vinegar_bucket", () -> new BucketItem(CSNCFluidRegistry.VINEGAR_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
 }
 
 //Honey HONEY from create

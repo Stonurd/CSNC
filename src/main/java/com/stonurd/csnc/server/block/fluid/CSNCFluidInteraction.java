@@ -14,6 +14,7 @@ import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation
 
 import slimeknights.tconstruct.fluids.TinkerFluids;
 
+
 public class CSNCFluidInteraction {
 
     public static void postInit() {
@@ -62,12 +63,13 @@ public class CSNCFluidInteraction {
                 CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(),
                         fluidState -> fluidState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : CSNCBlockRegistry.LIMESTONE1.get().defaultBlockState()));
 //ink original interraction from CEI
- FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.INK_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
+                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.INK_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 ForgeMod.LAVA_TYPE.get(),
                         fluidState -> Blocks.BLACKSTONE.defaultBlockState()));
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.INK_FLUID_TYPE1.get(),
                         fluidState -> Blocks.BLACKSTONE.defaultBlockState()));
+                         
 //ROCK_CANDY zone
         //YELLOW_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(

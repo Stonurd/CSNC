@@ -4,7 +4,10 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.renderer.FogRenderer;
 
 import net.minecraft.resources.ResourceLocation;
-
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 
@@ -41,10 +44,35 @@ public class MayonnaiseFluidType extends FluidType {
       @Override
         public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
           float nearDistance, float farDistance, FogShape shape) {
-            RenderSystem.setShaderFogColor(200f/255f,180f/255f,100f/255f);////255,220,140
-            RenderSystem.setShaderFogStart(-1024);
-            RenderSystem.setShaderFogEnd(96.0f);
+            RenderSystem.setShaderFogColor(189f/255f,176f/255f,115f/255f);//// too light 200,180,100 // rgb(189, 176, 115) //182f/128f,164f/255f,78f/255f
+            RenderSystem.setShaderFogStart(-1024.0f);
+            RenderSystem.setShaderFogEnd(0.2f);
       }
     });
   }
+      public boolean move(FluidState state, LivingEntity entity, Vec3 movementVector, double gravity) {
+        double y = entity.getY();
+        boolean falling = entity.getDeltaMovement().y <= 0.0D;
+
+          entity.moveRelative(0.02F, movementVector);
+          entity.move(MoverType.SELF, entity.getDeltaMovement());
+
+            if (entity.horizontalCollision && entity.onClimbable()) {
+              entity.setDeltaMovement(entity.getDeltaMovement().multiply(0.5D, 0.8D, 0.5D));
+              Vec3 fallingMovement = entity.getFluidFallingAdjustedMovement(gravity, falling, entity.getDeltaMovement());
+              entity.setDeltaMovement(fallingMovement);
+              } else {
+                entity.setDeltaMovement(entity.getDeltaMovement().scale(0.5D));
+            }
+
+            if (!entity.isNoGravity()) {
+              entity.setDeltaMovement(entity.getDeltaMovement().add(0.0D, -gravity / 4.0D, 0.0D));
+            }
+
+            Vec3 delta = entity.getDeltaMovement();
+              if (entity.horizontalCollision && entity.isFree(delta.x, delta.y + (double)0.6F - entity.getY() + y, delta.z)) {
+                entity.setDeltaMovement(delta.x, 0.3D, delta.z);
+              }
+              return true;
+      }
 }

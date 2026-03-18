@@ -50,6 +50,24 @@ public static final RegistryObject<LiquidBlock> BLACK_CHOCOLATE1 = BLOCK_REG.reg
     -> new LiquidBlock(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_SOURCE1, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN)
         .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
 
+public static final RegistryObject<LiquidBlock> RED_WINE_BUCKET1 = BLOCK_REG.register("red_wine", ()
+    -> new LiquidBlock(CSNCFluidRegistry.RED_WINE_SOURCE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
+        .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
+public static final RegistryObject<LiquidBlock> WHITE_WINE_BUCKET1 = BLOCK_REG.register("white_wine", ()
+    -> new LiquidBlock(CSNCFluidRegistry.WHITE_WINE_SOURCE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN)
+        .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
+public static final RegistryObject<LiquidBlock> APPLE_JUICE_BUCKET1 = BLOCK_REG.register("apple_juice", ()
+    -> new LiquidBlock(CSNCFluidRegistry.APPLE_FUID_SOURCE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW)
+        .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
+
+public static final RegistryObject<LiquidBlock> WINE_BUCKET1 = BLOCK_REG.register("wine", ()
+    -> new LiquidBlock(CSNCFluidRegistry.WINE_SOURCE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
+        .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
+
+public static final RegistryObject<LiquidBlock> VINEGAR_BUCKET1 = BLOCK_REG.register("vinegar", ()
+    -> new LiquidBlock(CSNCFluidRegistry.VINEGAR_SOURCE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW)
+        .noCollission().strength(100.0F).lightLevel(state -> 1).emissiveRendering((state, world, pos) -> false).noLootTable().replaceable().liquid().pushReaction(PushReaction.DESTROY)));
+
 @SuppressWarnings("removal")
 public static final RegistryObject<Block> LIMESTONE1 =  RegistryObject.create(new ResourceLocation("create", "limestone"),ForgeRegistries.BLOCKS);
 }

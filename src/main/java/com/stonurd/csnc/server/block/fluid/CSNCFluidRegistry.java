@@ -35,7 +35,7 @@ public static final RegistryObject<FlowingFluid> HONEY_FLUID_SOURCE1 = FLUID_REG
 public static final RegistryObject<FlowingFluid> HONEY_FLUID_FLOWING1 = FLUID_REG.register("honey_flowing", () -> new ForgeFlowingFluid.Flowing(honeyProperties()));
 //ink INK
 public static ForgeFlowingFluid.Properties inkProperties() {
-        return new ForgeFlowingFluid.Properties(INK_FLUID_TYPE1, INK_FLUID_SOURCE1, INK_FLUID_FLOWING1).tickRate(4).slopeFindDistance(2).levelDecreasePerBlock(1)
+        return new ForgeFlowingFluid.Properties(INK_FLUID_TYPE1, INK_FLUID_SOURCE1, INK_FLUID_FLOWING1).tickRate(2).slopeFindDistance(2).levelDecreasePerBlock(1)
                 .bucket(CSNCItemRegistry.INK_BUCKET1).block(CSNCBlockRegistry.INK1);
         }
 public static final RegistryObject<FluidType> INK_FLUID_TYPE1 = FLUID_TYPE_REG.register("ink", ()
@@ -46,7 +46,7 @@ public static final RegistryObject<FlowingFluid> INK_FLUID_SOURCE1 = FLUID_REG.r
 public static final RegistryObject<FlowingFluid> INK_FLUID_FLOWING1 = FLUID_REG.register("ink_flowing", () -> new ForgeFlowingFluid.Flowing(inkProperties()));
 //caramel CARAMEL from create confectionnery
 public static ForgeFlowingFluid.Properties caramelProperties() {
-        return new ForgeFlowingFluid.Properties(CARAMEL_FLUID_TYPE1, CARAMEL_FLUID_SOURCE1, CARAMEL_FLUID_FLOWING1).tickRate(40).slopeFindDistance(2).levelDecreasePerBlock(2)
+        return new ForgeFlowingFluid.Properties(CARAMEL_FLUID_TYPE1, CARAMEL_FLUID_SOURCE1, CARAMEL_FLUID_FLOWING1).tickRate(60).slopeFindDistance(2).levelDecreasePerBlock(2)
                 .bucket(CSNCItemRegistry.CARAMEL_BUCKET1).block(CSNCBlockRegistry.CARAMEL1);
         }
 public static final RegistryObject<FluidType> CARAMEL_FLUID_TYPE1 = FLUID_TYPE_REG.register("caramel", ()
@@ -57,7 +57,7 @@ public static final RegistryObject<FlowingFluid> CARAMEL_FLUID_SOURCE1 = FLUID_R
 public static final RegistryObject<FlowingFluid> CARAMEL_FLUID_FLOWING1 = FLUID_REG.register("caramel_flowing", () -> new ForgeFlowingFluid.Flowing(caramelProperties()));
 //ruby_chocolate rubychocolate RUBY_CHOCOLATE from create confectionnery
 public static ForgeFlowingFluid.Properties rubychocolateProperties() {
-        return new ForgeFlowingFluid.Properties(RUBY_CHOCOLATE_FLUID_TYPE1, RUBY_CHOCOLATE_FLUID_SOURCE1, RUBY_CHOCOLATE_FLUID_FLOWING1).tickRate(40).slopeFindDistance(2).levelDecreasePerBlock(2)
+        return new ForgeFlowingFluid.Properties(RUBY_CHOCOLATE_FLUID_TYPE1, RUBY_CHOCOLATE_FLUID_SOURCE1, RUBY_CHOCOLATE_FLUID_FLOWING1).tickRate(60).slopeFindDistance(2).levelDecreasePerBlock(2)
                 .bucket(CSNCItemRegistry.RUBY_CHOCOLATE_BUCKET1).block(CSNCBlockRegistry.RUBY_CHOCOLATE1);
         }
 public static final RegistryObject<FluidType> RUBY_CHOCOLATE_FLUID_TYPE1 = FLUID_TYPE_REG.register("ruby_chocolate", ()
@@ -68,7 +68,7 @@ public static final RegistryObject<FlowingFluid> RUBY_CHOCOLATE_FLUID_SOURCE1 = 
 public static final RegistryObject<FlowingFluid> RUBY_CHOCOLATE_FLUID_FLOWING1 = FLUID_REG.register("ruby_chocolate_flowing", () -> new ForgeFlowingFluid.Flowing(rubychocolateProperties()));
 //curdled_milk curdledmilk CURDLED_MILK from create bitterballen
 public static ForgeFlowingFluid.Properties curdledmilkProperties() {
-        return new ForgeFlowingFluid.Properties(CURDLED_MILK_FLUID_TYPE1, CURDLED_MILK_FLUID_SOURCE1, CURDLED_MILK_FLUID_FLOWING1).tickRate(40).slopeFindDistance(2).levelDecreasePerBlock(2)
+        return new ForgeFlowingFluid.Properties(CURDLED_MILK_FLUID_TYPE1, CURDLED_MILK_FLUID_SOURCE1, CURDLED_MILK_FLUID_FLOWING1).tickRate(50).slopeFindDistance(2).levelDecreasePerBlock(2)
                 .bucket(CSNCItemRegistry.CURDLED_MILK_BUCKET1).block(CSNCBlockRegistry.CURDLED_MILK1);
         }
 public static final RegistryObject<FluidType> CURDLED_MILK_FLUID_TYPE1 = FLUID_TYPE_REG.register("curdled_milk", ()
@@ -101,7 +101,7 @@ public static final RegistryObject<FlowingFluid> KETCHUP_FLUID_SOURCE1 = FLUID_R
 public static final RegistryObject<FlowingFluid> KETCHUP_FLUID_FLOWING1 = FLUID_REG.register("ketchup_flowing", () -> new ForgeFlowingFluid.Flowing(ketchupProperties()));
 //frying_oil fryingoil FRYING_OIL from create bitterballen
 public static ForgeFlowingFluid.Properties fryingoilProperties() {
-        return new ForgeFlowingFluid.Properties(FRYING_OIL_FLUID_TYPE1, FRYING_OIL_FLUID_SOURCE1, FRYING_OIL_FLUID_FLOWING1).tickRate(5).slopeFindDistance(2).levelDecreasePerBlock(1)
+        return new ForgeFlowingFluid.Properties(FRYING_OIL_FLUID_TYPE1, FRYING_OIL_FLUID_SOURCE1, FRYING_OIL_FLUID_FLOWING1).tickRate(3).slopeFindDistance(2).levelDecreasePerBlock(1)
                 .bucket(CSNCItemRegistry.FRYING_OIL_BUCKET1).block(CSNCBlockRegistry.FRYING_OIL1);
         }
 public static final RegistryObject<FluidType> FRYING_OIL_FLUID_TYPE1 = FLUID_TYPE_REG.register("frying_oil", ()
@@ -112,7 +112,7 @@ public static final RegistryObject<FlowingFluid> FRYING_OIL_FLUID_SOURCE1 = FLUI
 public static final RegistryObject<FlowingFluid> FRYING_OIL_FLUID_FLOWING1 = FLUID_REG.register("frying_oil_flowing", () -> new ForgeFlowingFluid.Flowing(fryingoilProperties()));
 //slime SLIME from create: thing and misc
 public static ForgeFlowingFluid.Properties slimeProperties() {
-        return new ForgeFlowingFluid.Properties(SLIME_FLUID_TYPE1, SLIME_FLUID_SOURCE1, SLIME_FLUID_FLOWING1).tickRate(5).slopeFindDistance(2).levelDecreasePerBlock(3)
+        return new ForgeFlowingFluid.Properties(SLIME_FLUID_TYPE1, SLIME_FLUID_SOURCE1, SLIME_FLUID_FLOWING1).tickRate(20).slopeFindDistance(2).levelDecreasePerBlock(3)
                 .bucket(CSNCItemRegistry.SLIME_BUCKET1).block(CSNCBlockRegistry.SLIME1);
         }
 public static final RegistryObject<FluidType> SLIME_FLUID_TYPE1 = FLUID_TYPE_REG.register("slime", ()
@@ -124,7 +124,7 @@ public static final RegistryObject<FlowingFluid> SLIME_FLUID_FLOWING1 = FLUID_RE
 
 //black_chocolate BLACK_CHOCOLATE from create confectionnery
 public static ForgeFlowingFluid.Properties blackchocolateProperties() {
-        return new ForgeFlowingFluid.Properties(BLACK_CHOCOLATE_FLUID_TYPE1, BLACK_CHOCOLATE_FLUID_SOURCE1, BLACK_CHOCOLATE_FLUID_FLOWING1).tickRate(10).slopeFindDistance(2).levelDecreasePerBlock(3)
+        return new ForgeFlowingFluid.Properties(BLACK_CHOCOLATE_FLUID_TYPE1, BLACK_CHOCOLATE_FLUID_SOURCE1, BLACK_CHOCOLATE_FLUID_FLOWING1).tickRate(60).slopeFindDistance(2).levelDecreasePerBlock(3)
                 .bucket(CSNCItemRegistry.BLACK_CHOCOLATE_BUCKET1).block(CSNCBlockRegistry.BLACK_CHOCOLATE1);
         }
 public static final RegistryObject<FluidType> BLACK_CHOCOLATE_FLUID_TYPE1 = FLUID_TYPE_REG.register("black_chocolate", ()
@@ -133,4 +133,30 @@ public static final RegistryObject<FluidType> BLACK_CHOCOLATE_FLUID_TYPE1 = FLUI
         ));
 public static final RegistryObject<FlowingFluid> BLACK_CHOCOLATE_FLUID_SOURCE1 = FLUID_REG.register("black_chocolate", () -> new ForgeFlowingFluid.Source(blackchocolateProperties()));
 public static final RegistryObject<FlowingFluid> BLACK_CHOCOLATE_FLUID_FLOWING1 = FLUID_REG.register("black_chocolate_flowing", () -> new ForgeFlowingFluid.Flowing(blackchocolateProperties()));
+
+//tint zone
+public static final RegistryObject<FluidType> RED_WINE_FLUID_TYPE = FLUID_TYPE_REG.register("red_wine", () -> new Tintfluidtype(0xFF991a48));
+public static final RegistryObject<FlowingFluid> RED_WINE_SOURCE = FLUID_REG.register("red_wine", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.RED_WINE_FLUID_PROPERTIES));
+public static final RegistryObject<FlowingFluid> RED_WINE_FLOWING = FLUID_REG.register("red_wine_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.RED_WINE_FLUID_PROPERTIES));
+public static final ForgeFlowingFluid.Properties RED_WINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(RED_WINE_FLUID_TYPE, RED_WINE_SOURCE, RED_WINE_FLOWING);
+
+public static final RegistryObject<FluidType> WHITE_WINE_FLUID_TYPE = FLUID_TYPE_REG.register("white_wine", () -> new Tintfluidtype(0xFF559c44));
+public static final RegistryObject<FlowingFluid> WHITE_WINE_SOURCE = FLUID_REG.register("white_wine", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.WHITE_WINE_FLUID_PROPERTIES));
+public static final RegistryObject<FlowingFluid> WHITE_WINE_FLOWING = FLUID_REG.register("white_wine_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.WHITE_WINE_FLUID_PROPERTIES));
+public static final ForgeFlowingFluid.Properties WHITE_WINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(WHITE_WINE_FLUID_TYPE, WHITE_WINE_SOURCE, WHITE_WINE_FLOWING);
+
+public static final RegistryObject<FluidType> APPLE_FLUID_TYPE = FLUID_TYPE_REG.register("apple_juice", () -> new Tintfluidtype(0xFFf5f613));
+public static final RegistryObject<FlowingFluid> APPLE_FUID_SOURCE = FLUID_REG.register("apple_juice", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.APPLE_FLUID_PROPERTIES));
+public static final RegistryObject<FlowingFluid> APPLE_FLUID_FLOWING = FLUID_REG.register("apple_juice_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.APPLE_FLUID_PROPERTIES));
+public static final ForgeFlowingFluid.Properties APPLE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(APPLE_FLUID_TYPE, APPLE_FUID_SOURCE, APPLE_FLUID_FLOWING);
+
+public static final RegistryObject<FluidType> WINE_FLUID_TYPE = FLUID_TYPE_REG.register("wine", () -> new Tintfluidtype(0xFF75192a));
+public static final RegistryObject<FlowingFluid> WINE_SOURCE = FLUID_REG.register("wine", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.WINE_FLUID_PROPERTIES));
+public static final RegistryObject<FlowingFluid> WINE_FLOWING = FLUID_REG.register("wine_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.WINE_FLUID_PROPERTIES));
+public static final ForgeFlowingFluid.Properties WINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(WINE_FLUID_TYPE, WINE_SOURCE, WINE_FLOWING);
+
+public static final RegistryObject<FluidType> VINEGAR_FLUID_TYPE = FLUID_TYPE_REG.register("vinegar", () -> new Tintfluidtype(0xFFa29e74));
+public static final RegistryObject<FlowingFluid> VINEGAR_SOURCE = FLUID_REG.register("vinegar", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.VINEGAR_FLUID_PROPERTIES));
+public static final RegistryObject<FlowingFluid> VINEGAR_FLOWING = FLUID_REG.register("vinegar_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.VINEGAR_FLUID_PROPERTIES));
+public static final ForgeFlowingFluid.Properties VINEGAR_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(VINEGAR_FLUID_TYPE, VINEGAR_SOURCE, VINEGAR_FLOWING);
 }

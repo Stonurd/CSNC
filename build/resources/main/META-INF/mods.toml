@@ -7,10 +7,10 @@ license = "All Rights Reserved"
 
 [[mods]]
     modId="csnc" #mandatory
-    version="1.0-1.20.1" #mandatory
-    displayName="CreateSweetsNuclearCore" #mandatory
+    version="1" #mandatory
+    displayName="csnc" #mandatory
     authors="Stonurd" #optional
-    description='''Add fluid interraction from Alex's Caves block'''
+    description='''Add fluid and fluid interraction from Alex's Caves block'''
     #logoFile="csnc.png" #optional
 [[dependencies.csnc]]
     modId = "minecraft"
