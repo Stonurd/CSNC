@@ -25,6 +25,7 @@ run
 forge*changelog.txt
 
 # Files CSNC
-libs/
-build/
-libs/
+libs
+build
+libs
+.vscode
