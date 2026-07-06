@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_bic_bit:crushed_sunflower_seeds"
+    },
+        {
+      "item": "create_bic_bit:crushed_sunflower_seeds"
+    },
+        {
+      "item": "create_bic_bit:crushed_sunflower_seeds"
+    },
+        {
+      "item": "create_bic_bit:crushed_sunflower_seeds"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "csnc:frying_oil"
+    }
+  ]
+}

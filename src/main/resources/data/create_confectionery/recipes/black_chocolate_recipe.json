@@ -1,0 +1,31 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "ratatouille:cocoa_butter"
+    },
+    {
+      "item": "create_confectionery:cocoa_powder"
+    },
+    {
+      "item": "create_confectionery:cocoa_powder"
+    },
+    {
+      "item": "create_confectionery:cocoa_powder"
+    },
+    {
+      "item": "create_confectionery:cocoa_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:black_chocolate",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

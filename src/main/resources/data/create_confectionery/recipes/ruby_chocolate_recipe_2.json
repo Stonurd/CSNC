@@ -1,0 +1,16 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_confectionery:bar_of_ruby_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:ruby_chocolate",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

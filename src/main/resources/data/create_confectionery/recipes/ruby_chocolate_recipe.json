@@ -1,0 +1,38 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+ {
+      "item": "ratatouille:cocoa_butter"
+    },
+    {
+      "item": "kubejs:red_cocoao_powder"
+    },
+    {
+      "item": "kubejs:red_cocoao_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "forge:milk"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:ruby_chocolate",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

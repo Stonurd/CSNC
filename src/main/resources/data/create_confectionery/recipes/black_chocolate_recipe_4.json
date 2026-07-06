@@ -1,0 +1,16 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_confectionery:black_chocolate_bricks_stairs"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:black_chocolate",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "heated"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "brewinandchewin:flaxen_cheese_wedge"
+    },
+    {
+      "item": "pneumaticcraft:wheat_flour"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_bic_bit:raw_cheese_souffle"
+    }
+  ]
+}

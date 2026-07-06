@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 50,
+      "fluid": "csnc:vinegar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "csnc:ketchup"
+    }
+  ]
+}

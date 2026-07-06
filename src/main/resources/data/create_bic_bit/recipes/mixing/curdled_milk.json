@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 25,
+      "fluid": "pneumaticcraft:yeast_culture"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "csnc:curdled_milk"
+    }
+  ]
+}

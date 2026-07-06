@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    },
+    {
+      "amount": 125,
+      "fluid": "the_bumblezone:honey_fluid_still"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_bic_bit:sweet_dough"
+    }
+  ]
+}

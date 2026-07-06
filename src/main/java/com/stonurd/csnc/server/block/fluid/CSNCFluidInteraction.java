@@ -26,50 +26,101 @@ public class CSNCFluidInteraction {
 //Alex's Caves
         //basaltLike interaction zone
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        (level, currentPos, relativePos, currentState) 
+                        ->
+                        ( level.getBlockState(currentPos.east()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_SCARLET_NEODYMIUM.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         ACBlockRegistry.GALENA.get().defaultBlockState()));
+                        
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        (level, currentPos, relativePos, currentState)
+                        -> 
+                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         ACBlockRegistry.GALENA.get().defaultBlockState()));
+
+                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
+                        (level, currentPos, relativePos, currentState)
+                        -> 
+                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBERSOL.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.AMBERSOL.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.AMBERSOL.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.AMBERSOL.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBERSOL.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        ACBlockRegistry.LIMESTONE.get().defaultBlockState()));
+
+                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
+                        (level, currentPos, relativePos, currentState)
+                         -> 
+                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        ACBlockRegistry.FLOOD_BASALT.get().defaultBlockState()));
+
+                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
+                        (level, currentPos, relativePos, currentState) 
+                        -> 
+                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        ACBlockRegistry.COPROLITH.get().defaultBlockState()));
+                        
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.DRAIN.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         ACBlockRegistry.ABYSSMARINE.get().defaultBlockState()));
-                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBERSOL.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
-                        ACBlockRegistry.LIMESTONE.get().defaultBlockState()));
-                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.PRIMAL_MAGMA.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
-                        ACBlockRegistry.FLOOD_BASALT.get().defaultBlockState()));
-                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
-                        ACBlockRegistry.COPROLITH.get().defaultBlockState()));
-        //btw fluid interaction zone
-                //CAKE_LAYER
+        //BLOCK_OF_CHOCOLATE
+                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(), new InteractionInformation(
+                        (level, currentPos, relativePos, currentState)
+                        ->
+                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.LICOROOT.get())
+                        || level.getBlockState(currentPos.west()).is(ACBlockRegistry.LICOROOT.get())
+                        || level.getBlockState(currentPos.north()).is(ACBlockRegistry.LICOROOT.get())
+                        || level.getBlockState(currentPos.south()).is(ACBlockRegistry.LICOROOT.get())
+                        || level.getBlockState(currentPos.below()).is(ACBlockRegistry.LICOROOT.get())
+                        )
+                        && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        ACBlockRegistry.BLOCK_OF_CHOCOLATE.get().defaultBlockState()));
+
+//btw fluid interaction zone
+        //CAKE_LAYER
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.CARAMEL_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
-                ForgeMod.WATER_TYPE.get(),
+                CSNCFluidRegistry.CURDLED_MILK_FLUID_TYPE1.get(),
                         fluidState -> ACBlockRegistry.CAKE_LAYER.get().defaultBlockState()));
-                FluidInteractionRegistry.addInteraction(ForgeMod.WATER_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
+                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.CURDLED_MILK_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.CARAMEL_FLUID_TYPE1.get(),
                         fluidState -> ACBlockRegistry.CAKE_LAYER.get().defaultBlockState()));
-
-                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
-                ForgeMod.WATER_TYPE.get(),
-                        fluidState -> ACBlockRegistry.BLOCK_OF_CHOCOLATE.get().defaultBlockState()));
-                FluidInteractionRegistry.addInteraction(ForgeMod.WATER_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
-                CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(),
-                        fluidState -> ACBlockRegistry.BLOCK_OF_CHOCOLATE.get().defaultBlockState()));
-//honey original interraction from create
+        //honey original interraction from create
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.HONEY_FLUID_TYPE1.get(),
                         fluidState -> fluidState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : CSNCBlockRegistry.LIMESTONE1.get().defaultBlockState()));
-//ink original interraction from CEI
+        //ink original interraction from CEI
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.INK_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 ForgeMod.LAVA_TYPE.get(),
                         fluidState -> Blocks.BLACKSTONE.defaultBlockState()));
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.INK_FLUID_TYPE1.get(),
                         fluidState -> Blocks.BLACKSTONE.defaultBlockState()));
-                         
+
 //ROCK_CANDY zone
         //YELLOW_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
@@ -155,7 +206,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 TinkerFluids.earthSlime.getType(),
                         fluidState -> ACBlockRegistry.CYAN_ROCK_CANDY.get().defaultBlockState()));
-        //BROWN_ROCK_CANDY TinkerFluids.earthSlime.getType()
+        //BROWN_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
                 ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(),
                         fluidState -> ACBlockRegistry.BROWN_ROCK_CANDY.get().defaultBlockState()));
@@ -186,3 +237,9 @@ FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new Interactio
                 fluidState -> ACBlockRegistry.CYAN_ROCK_CANDY.get().defaultBlockState()
         ));*/
 
+        /*
+        ACBlockRegistry.GALENA.get().defaultBlockState()));
+                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
+                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get()) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
+                        ACBlockRegistry.GALENA.get().defaultBlockState()));
+         */

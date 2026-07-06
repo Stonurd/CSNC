@@ -1,0 +1,16 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_confectionery:ruby_chocolate_brick_slab"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:ruby_chocolate",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

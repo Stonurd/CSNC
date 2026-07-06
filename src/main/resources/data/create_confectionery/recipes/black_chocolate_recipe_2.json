@@ -1,0 +1,16 @@
+{
+  "group": "create_confectionery",
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_confectionery:bar_of_black_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "csnc:black_chocolate",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "heated"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "amount": 10,
+      "fluid": "csnc:vinegar"
+    },
+    {
+      "amount": 125,
+      "fluid": "csnc:frying_oil"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "csnc:mayonnaise"
+    }
+  ]
+}

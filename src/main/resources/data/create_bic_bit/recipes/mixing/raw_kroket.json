@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_meat"
+    },
+    {
+      "item": "pneumaticcraft:wheat_flour"
+    },
+    {
+      "item": "pneumaticcraft:wheat_flour"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:milk"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_bic_bit:raw_kroket"
+    }
+  ]
+}
