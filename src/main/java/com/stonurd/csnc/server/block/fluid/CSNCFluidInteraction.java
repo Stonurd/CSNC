@@ -40,7 +40,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState)
                         -> 
-                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
+                        (level.getBlockState(currentPos.east()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
                         || level.getBlockState(currentPos.west()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
                         || level.getBlockState(currentPos.north()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
                         || level.getBlockState(currentPos.south()).is(ACBlockRegistry.BLOCK_OF_AZURE_NEODYMIUM.get())
@@ -52,7 +52,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState)
                         -> 
-                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.AMBERSOL.get())
+                        (level.getBlockState(currentPos.east()).is(ACBlockRegistry.AMBERSOL.get())
                         || level.getBlockState(currentPos.west()).is(ACBlockRegistry.AMBERSOL.get())
                         || level.getBlockState(currentPos.north()).is(ACBlockRegistry.AMBERSOL.get())
                         || level.getBlockState(currentPos.south()).is(ACBlockRegistry.AMBERSOL.get())
@@ -64,7 +64,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState)
                          -> 
-                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
+                        (level.getBlockState(currentPos.east()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
                         || level.getBlockState(currentPos.west()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
                         || level.getBlockState(currentPos.north()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
                         || level.getBlockState(currentPos.south()).is(ACBlockRegistry.PRIMAL_MAGMA.get())
@@ -76,7 +76,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState) 
                         -> 
-                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
+                        (level.getBlockState(currentPos.east()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
                         || level.getBlockState(currentPos.west()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
                         || level.getBlockState(currentPos.north()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
                         || level.getBlockState(currentPos.south()).is(ACBlockRegistry.STRIPPED_THORNWOOD_WOOD.get())
@@ -92,7 +92,7 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.BLACK_CHOCOLATE_FLUID_TYPE1.get(), new InteractionInformation(
                         (level, currentPos, relativePos, currentState)
                         ->
-                        (level.getBlockState(currentPos.below()).is(ACBlockRegistry.LICOROOT.get())
+                        (level.getBlockState(currentPos.east()).is(ACBlockRegistry.LICOROOT.get())
                         || level.getBlockState(currentPos.west()).is(ACBlockRegistry.LICOROOT.get())
                         || level.getBlockState(currentPos.north()).is(ACBlockRegistry.LICOROOT.get())
                         || level.getBlockState(currentPos.south()).is(ACBlockRegistry.LICOROOT.get())

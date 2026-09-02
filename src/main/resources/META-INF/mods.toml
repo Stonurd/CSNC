@@ -51,7 +51,7 @@ license = "All Rights Reserved"
 [[dependencies.csnc]]
     modId = "create_enchantment_industry"
     mandatory = true
-    versionRange = "[1.4.0-for-create-6.0.8]"
+    versionRange = "[1.4.1-for-create-6.0.8]"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.csnc]]
