@@ -5,6 +5,9 @@ loaderVersion = "[47,)"
 
 license = "All Rights Reserved"
 
+[[mixins]]
+    config = "csnc.mixins.json"
+
 [[mods]]
     modId="csnc" #mandatory
     version="1" #mandatory
@@ -65,4 +68,4 @@ license = "All Rights Reserved"
     mandatory = true
     versionRange ="[47,)"
     ordering = "NONE"
-    side = "BOTH"
+    side = "BOTH"   

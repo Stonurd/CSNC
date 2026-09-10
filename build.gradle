@@ -161,7 +161,7 @@ dependencies {
 mixin {
     
     add sourceSets.main, 'mixins.csnc.refmap.json'
-    config 'mixins.csnc.json'
+    config 'csnc.mixins.json'
 
     debug.verbose = true
     debug.export = true
