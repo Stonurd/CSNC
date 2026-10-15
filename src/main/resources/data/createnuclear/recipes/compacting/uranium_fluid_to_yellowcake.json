@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "csnc:uranium"
+    }
+  ],
+  "results": [
+    {
+      "item": "csnc:yellowcake"
+    }
+  ]
+}

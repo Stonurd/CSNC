@@ -120,7 +120,15 @@ public class CSNCFluidInteraction {
                 FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 CSNCFluidRegistry.INK_FLUID_TYPE1.get(),
                         fluidState -> Blocks.BLACKSTONE.defaultBlockState()));
+        //autunite AUTUNITE1
 
+                FluidInteractionRegistry.addInteraction(CSNCFluidRegistry.URANIUM_FLUID_TYPE1.get(), new FluidInteractionRegistry.InteractionInformation(
+                ForgeMod.LAVA_TYPE.get(),
+                        fluidState -> CSNCBlockRegistry.AUTUNITE1.get().defaultBlockState()));
+
+                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
+                CSNCFluidRegistry.URANIUM_FLUID_TYPE1.get(),
+                        fluidState -> CSNCBlockRegistry.AUTUNITE1.get().defaultBlockState()));
 //ROCK_CANDY zone
         //YELLOW_ROCK_CANDY
                 FluidInteractionRegistry.addInteraction(ACFluidRegistry.PURPLE_SODA_FLUID_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(

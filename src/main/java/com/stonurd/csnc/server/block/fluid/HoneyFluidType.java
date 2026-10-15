@@ -54,7 +54,7 @@ public class HoneyFluidType extends FluidType {
           float nearDistance, float farDistance, FogShape shape) {
             RenderSystem.setShaderFogColor(240f/255f,201f/255f,85f/255f);//too light 255,216,100 
             RenderSystem.setShaderFogStart(-256.0f);//-128
-            RenderSystem.setShaderFogEnd(0.7f);//96.0f
+            RenderSystem.setShaderFogEnd(16f);//96.0f
       }
     });
   }

@@ -35,6 +35,9 @@ public class CSNCreativeTabRegistry {
                 output.accept(CSNCItemRegistry.APPLE_JUICE_BUCKET1.get());
                 output.accept(CSNCItemRegistry.WINE_BUCKET1.get());
                 output.accept(CSNCItemRegistry.VINEGAR_BUCKET1.get());
+                output.accept(CSNCItemRegistry.YELLOWCAKE.get());
+                output.accept(CSNCItemRegistry.ENRICHED_YELLOWCAKE.get());
+                output.accept(CSNCItemRegistry.URANIUM_BUCKET1.get());
             })
             .build());
 }

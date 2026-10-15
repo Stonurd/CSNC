@@ -1,5 +1,6 @@
 package com.stonurd.csnc.server.item;
 
+import com.github.alexmodguy.alexscaves.server.item.RadioactiveItem;
 import com.stonurd.csnc.CSNCMain;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidRegistry;
 
@@ -38,11 +39,17 @@ public static final RegistryObject<Item> WHITE_WINE_BUCKET1 = ITEM_REG.register(
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
 public static final RegistryObject<Item> APPLE_JUICE_BUCKET1 = ITEM_REG.register("apple_juice_bucket", () -> new BucketItem(CSNCFluidRegistry.APPLE_FUID_SOURCE,
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
-
 public static final RegistryObject<Item> WINE_BUCKET1 = ITEM_REG.register("wine_bucket", () -> new BucketItem(CSNCFluidRegistry.WINE_SOURCE,
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
 
 public static final RegistryObject<Item> VINEGAR_BUCKET1 = ITEM_REG.register("vinegar_bucket", () -> new BucketItem(CSNCFluidRegistry.VINEGAR_SOURCE,
+    new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    //public static final RegistryObject<Item> COOKED_TRILOCARIS_TAIL = DEF_REG.register("cooked_trilocaris_tail", () -> new Item(new Item.Properties().food(ACFoods.TRILOCARIS_TAIL_COOKED)));
+public static final RegistryObject<Item> YELLOWCAKE = ITEM_REG.register("yellowcake", () -> new RadioactiveItem(new Item.Properties().food(CSNCFoods.YELLOWCAKE), 0.008F));
+public static final RegistryObject<Item> ENRICHED_YELLOWCAKE = ITEM_REG.register("enriched_yellowcake", () -> new RadioactiveItem(new Item.Properties(), 0.016F));
+
+public static final RegistryObject<Item> URANIUM_BUCKET1 = ITEM_REG.register("uranium_bucket", () -> new BucketItem(CSNCFluidRegistry.URANIUM_SOURCE1,
     new Item.Properties().rarity(Rarity.RARE).craftRemainder(Items.BUCKET).stacksTo(1)));
 }
 

@@ -159,4 +159,18 @@ public static final RegistryObject<FluidType> VINEGAR_FLUID_TYPE = FLUID_TYPE_RE
 public static final RegistryObject<FlowingFluid> VINEGAR_SOURCE = FLUID_REG.register("vinegar", () -> new ForgeFlowingFluid.Source(CSNCFluidRegistry.VINEGAR_FLUID_PROPERTIES));
 public static final RegistryObject<FlowingFluid> VINEGAR_FLOWING = FLUID_REG.register("vinegar_flowing", () -> new ForgeFlowingFluid.Flowing(CSNCFluidRegistry.VINEGAR_FLUID_PROPERTIES));
 public static final ForgeFlowingFluid.Properties VINEGAR_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(VINEGAR_FLUID_TYPE, VINEGAR_SOURCE, VINEGAR_FLOWING);
+
+
+public static ForgeFlowingFluid.Properties uraniumProperties() {
+        return new ForgeFlowingFluid.Properties(URANIUM_FLUID_TYPE1, URANIUM_SOURCE1, URANIUM_FLOWING1).tickRate(50).slopeFindDistance(2).levelDecreasePerBlock(2)
+                .bucket(CSNCItemRegistry.URANIUM_BUCKET1).block(CSNCBlockRegistry.URANIUM1);
+        }
+public static final RegistryObject<FluidType> URANIUM_FLUID_TYPE1 = FLUID_TYPE_REG.register("uranium", ()
+        -> new UraniumFluidType(FluidType.Properties.create().lightLevel(3).density(2048).viscosity(4906).temperature(300).pathType(BlockPathTypes.LAVA).rarity(Rarity.RARE)
+                .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+        ));
+public static final RegistryObject<FlowingFluid> URANIUM_SOURCE1 = FLUID_REG.register("uranium", () -> new ForgeFlowingFluid.Source(uraniumProperties()));
+public static final RegistryObject<FlowingFluid> URANIUM_FLOWING1 = FLUID_REG.register("uranium_flowing", () -> new ForgeFlowingFluid.Flowing(uraniumProperties()));
+
+
 }

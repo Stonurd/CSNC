@@ -73,7 +73,7 @@
   "fluid.csnc.white_wine_flowing":"White Grape Juice",
   "fluid_type.csnc.white_wine":"White Grape Juice",
 
-  "item.csnc.apple_juic_bucket":"White Grape Juice Bucket",
+  "item.csnc.apple_juice_bucket":"White Grape Juice Bucket",
   "block.csnc.apple_juice":"Apple Juice",
   "fluid.csnc.apple_juice":"Apple Juice",
   "fluid.csnc.apple_juice_flowing":"Apple Juice",
@@ -89,5 +89,14 @@
   "block.csnc.vinegar":"Vinegar",
   "fluid.csnc.vinegar":"Vinegar",
   "fluid.csnc.vinegar_flowing":"Vinegar",
-  "fluid_type.csnc.vinegar":"Vinegar"
+  "fluid_type.csnc.vinegar":"Vinegar",
+
+  "item.csnc.yellowcake":"Yellowcake",
+  "item.csnc.enriched_yellowcake":"Enriched Yellowcake",
+
+  "item.csnc.uranium_bucket":"Uranium Bucket",
+  "block.csnc.uranium":"Uranium",
+  "fluid.csnc.uranium":"Uranium",
+  "fluid.csnc.uranium_flowing":"Uranium",
+  "fluid_type.csnc.uranium":"Uranium"
 }
