@@ -95,8 +95,8 @@
   "item.csnc.enriched_yellowcake":"Enriched Yellowcake",
 
   "item.csnc.uranium_bucket":"Uranium Bucket",
-  "block.csnc.uranium":"Uranium",
-  "fluid.csnc.uranium":"Uranium",
-  "fluid.csnc.uranium_flowing":"Uranium",
-  "fluid_type.csnc.uranium":"Uranium"
+  "block.csnc.uranium":"Liquid Uranium",
+  "fluid.csnc.uranium":"Liquid Uranium",
+  "fluid.csnc.uranium_flowing":"Liquid Uranium",
+  "fluid_type.csnc.uranium":"Liquid Uranium"
 }

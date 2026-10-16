@@ -66,7 +66,7 @@ license = "All Rights Reserved"
 [[dependencies.csnc]]
     modId = "createnuclear"
     mandatory = true
-    versionRange = "[2.0.0]"
+    versionRange = "[2.0.1]"
     ordering = "AFTER"
     side = "BOTH"
 [[dependencies.csnc]]

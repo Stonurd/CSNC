@@ -5,6 +5,17 @@ import com.stonurd.csnc.server.item.CSNCItemRegistry;
 import com.stonurd.csnc.server.misc.CSNCreativeTabRegistry;
 import com.stonurd.csnc.server.block.CSNCBlockRegistry;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidRegistry;
+import com.stonurd.csnc.server.block.fluid.CaramelFluidType;
+import com.stonurd.csnc.server.block.fluid.CurdledMilkFluidType;
+import com.stonurd.csnc.server.block.fluid.FryingOilFluidType;
+import com.stonurd.csnc.server.block.fluid.HoneyFluidType;
+import com.stonurd.csnc.server.block.fluid.InkFluidType;
+import com.stonurd.csnc.server.block.fluid.KetchupFluidType;
+import com.stonurd.csnc.server.block.fluid.MayonnaiseFluidType;
+import com.stonurd.csnc.server.block.fluid.RubyChocolateFluidType;
+import com.stonurd.csnc.server.block.fluid.SlimeFluidType;
+import com.stonurd.csnc.server.block.fluid.UraniumFluidType;
+import com.stonurd.csnc.server.block.fluid.BlackChocolateFluidType;
 import com.stonurd.csnc.server.block.fluid.CSNCFluidInteraction;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -41,6 +52,17 @@ public class CSNCMain {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         CSNCFluidInteraction.postInit();
+        event.enqueueWork(BlackChocolateFluidType::registerDispenserBehavior);
+        event.enqueueWork(CaramelFluidType::registerDispenserBehavior);
+        event.enqueueWork(CurdledMilkFluidType::registerDispenserBehavior);
+        event.enqueueWork(FryingOilFluidType::registerDispenserBehavior);
+        event.enqueueWork(HoneyFluidType::registerDispenserBehavior);
+        event.enqueueWork(InkFluidType::registerDispenserBehavior);
+        event.enqueueWork(KetchupFluidType::registerDispenserBehavior);
+        event.enqueueWork(MayonnaiseFluidType::registerDispenserBehavior);
+        event.enqueueWork(RubyChocolateFluidType::registerDispenserBehavior);
+        event.enqueueWork(SlimeFluidType::registerDispenserBehavior);
+        event.enqueueWork(UraniumFluidType::registerDispenserBehavior);
     }
 
     @SubscribeEvent

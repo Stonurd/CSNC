@@ -1,11 +1,22 @@
 package com.stonurd.csnc.server.block.fluid;
 
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
+
 import net.minecraft.client.Camera;
 import net.minecraft.client.renderer.FogRenderer;
-
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.BlockSource;
+import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.DispenserBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fluids.FluidType;
@@ -13,6 +24,8 @@ import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.stonurd.csnc.server.block.CSNCBlockRegistry;
+import com.stonurd.csnc.server.item.CSNCItemRegistry;
 
 import java.util.function.Consumer;
 
@@ -75,4 +88,22 @@ public class CurdledMilkFluidType extends FluidType {
               }
               return true;
       }
+    public static void registerDispenserBehavior() {
+      DispenserBlock.registerBehavior(CSNCItemRegistry.CURDLED_MILK_BUCKET1.get(), new DefaultDispenseItemBehavior() {
+        @Override
+        protected ItemStack execute(BlockSource source, ItemStack stack) {
+            Level level = source.getLevel();
+            BlockPos target = source.getPos().relative(source.getBlockState().getValue(DispenserBlock.FACING));
+            BlockState targetState = level.getBlockState(target);
+
+            if (targetState.isAir() || targetState.canBeReplaced()) {
+                level.setBlock(target, CSNCBlockRegistry.CURDLED_MILK1.get().defaultBlockState(), 3);
+                level.gameEvent(null, GameEvent.FLUID_PLACE, target);
+                level.playSound(null, target, SoundEvents.BUCKET_EMPTY_LAVA, SoundSource.BLOCKS, 1.0F, 1.0F);
+                return new ItemStack(Items.BUCKET);
+            }
+            return super.execute(source, stack);
+        }
+    });
+}
 }

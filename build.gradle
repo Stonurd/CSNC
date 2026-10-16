@@ -147,7 +147,7 @@ dependencies {
     implementation fg.deobf("curse.maven:create-enchantment-industry-688768:8204334")
     implementation fg.deobf("curse.maven:tinkers-construct-74072:7449219")
     implementation fg.deobf("curse.maven:mantle-74924:7414488")
-    implementation fg.deobf("curse.maven:createnuclear-989797:8708141")
+    implementation fg.deobf("curse.maven:createnuclear-989797:9056898")
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
